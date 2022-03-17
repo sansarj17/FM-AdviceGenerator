@@ -1,0 +1,92 @@
+:root {
+  /* ### Primary */
+
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--DarkBlue);
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 340px;
+  margin: 0 auto;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+p {
+  text-transform: uppercase;
+  color: var(--NeonGreen);
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 40px;
+}
+h1 {
+  /* border: 1px solid white; */
+  margin-top: 28px;
+  padding: 0 10px;
+  color: var(--LightCyan);
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.divider {
+  margin-bottom: 65px;
+}
+.dice {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: var(--NeonGreen);
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.dice:hover {
+  cursor: pointer;
+  background-color: rgb(104, 255, 180);
+  box-shadow: 0px 0px 30px rgba(104, 255, 180, 0.6);
+}
+.dice:hover #dice-image {
+  width: 32px;
+}
+
+.dice img {
+  width: 30px;
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.54, -0.32, 0.43, 1.28);
+}
+
+.dice img.dice-img-active {
+  transform: rotateZ(360deg) !important;
+}
