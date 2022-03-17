@@ -23,7 +23,7 @@ Mobile View
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/faq-accordion-card-ZRNKpuudS)
-- Live Site URL: [Live Site](https://github.com/sansarj17/FM-AdviceGenerator)
+- Live Site URL: [Live Site](https://sansarj17.github.io/FM-AdviceGenerator/)
 
 ### Built with
 
